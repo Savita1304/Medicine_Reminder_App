@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <NumberPicker
+        android:id="@+id/numberpicker"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </NumberPicker>
+
+</LinearLayout>
+
+    <!-- <androidx.cardview.widget.CardView
+          android:id="@+id/cardV1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="12dp"
+          android:background="@color/offWhite">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              &lt;!&ndash;
+              <LinearLayout
+                  android:id="@+id/calBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.1" />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_weight="0.8"
+                      android:gravity="left"
+                      android:padding="5dp"
+                      android:text="Start Date"
+
+                      android:textColor="@color/brown"
+                      android:textSize="14dp" />
+
+                  <EditText
+                      android:id="@+id/etcaln"
+
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.8"
+                      android:background="@drawable/border"
+                      android:clickable="false"
+                      android:cursorVisible="false"
+                      android:focusable="false"
+                      android:hint="DD/MM/YY"
+                      android:padding="5dp"
+                      android:paddingLeft="4dp"
+                      android:textColor="@color/gray"
+                      android:textColorHint="@color/gray" />
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/endBtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.1" />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_weight="0.8"
+                      android:gravity="left"
+                      android:padding="5dp"
+                      android:text="End Date"
+
+                      android:textColor="@color/brown"
+                      android:textSize="14dp" />
+
+                  <EditText
+                      android:id="@+id/endbtn1"
+
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.8"
+                      android:background="@drawable/border"
+                      android:clickable="false"
+                      android:cursorVisible="false"
+                      android:focusable="false"
+                      android:hint="DD/MM/YY"
+                      android:padding="5dp"
+                      android:paddingLeft="4dp"
+                      android:textColor="@color/gray"
+                      android:textColorHint="@color/gray" />
+
+
+              </LinearLayout>&ndash;&gt;
+
+              <LinearLayout
+                  android:id="@+id/ll1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.1" />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_weight="0.8"
+                      android:gravity="left"
+                      android:padding="5dp"
+                      android:text="Daily, every x hours"
+
+                      android:textColor="@color/brown"
+                      android:textSize="14dp" />
+
+                  <Spinner
+                      android:id="@+id/custSpinneryy"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"/>
+
+               &lt;!&ndash;   <EditText
+                      android:id="@+id/etXHours"
+
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.8"
+                      android:background="@drawable/border"
+                      android:clickable="false"
+                      android:cursorVisible="false"
+                      android:focusable="false"
+                      android:hint="12:00 PM"
+                      android:padding="5dp"
+                      android:paddingLeft="4dp"
+                      android:textColor="@color/gray"
+                      android:textColorHint="@color/gray" />&ndash;&gt;
+
+
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:id="@+id/etXday"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.1" />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_weight="0.8"
+                      android:gravity="left"
+                      android:padding="5dp"
+                      android:text="Every x day"
+
+                      android:textColor="@color/brown"
+                      android:textSize="14dp" />
+
+                  <EditText
+                      android:id="@+id/etXweek"
+
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.8"
+                      android:background="@drawable/border"
+                      android:clickable="false"
+                      android:cursorVisible="false"
+                      android:focusable="false"
+                      android:hint="12:00 PM"
+                      android:padding="5dp"
+                      android:paddingLeft="4dp"
+                      android:textColor="@color/gray"
+                      android:textColorHint="@color/gray" />
+
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/timebgtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.1" />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_weight="0.8"
+                      android:gravity="left"
+                      android:padding="5dp"
+                      android:text="Specific days of week "
+
+                      android:textColor="@color/brown"
+                      android:textSize="14dp" />
+
+                  <EditText
+                      android:id="@+id/ettirmee"
+
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.8"
+                      android:background="@drawable/border"
+                      android:clickable="false"
+                      android:cursorVisible="false"
+                      android:focusable="false"
+                      android:hint="12:00 PM"
+                      android:padding="5dp"
+                      android:paddingLeft="4dp"
+                      android:textColor="@color/gray"
+                      android:textColorHint="@color/gray" />
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/timebtn"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="0.1" />
+
+                  <TextView
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_margin="8dp"
+                      android:layout_weight="0.8"
+                      android:gravity="left"
+                      android:padding="5dp"
+                      android:text="Select Time"
+
+                      android:textColor="@color/brown"
+                      android:textSize="14dp" />
+
+                  <EditText
+                      android:id="@+id/ettimee"
+
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:layout_weight="0.8"
+                      android:background="@drawable/border"
+                      android:clickable="false"
+                      android:cursorVisible="false"
+                      android:focusable="false"
+                      android:hint="12:00 PM"
+                      android:padding="5dp"
+                      android:paddingLeft="4dp"
+                      android:textColor="@color/gray"
+                      android:textColorHint="@color/gray" />
+
+
+              </LinearLayout>
+
+
+
+
+
+          </LinearLayout>
+      </androidx.cardview.widget.CardView>-->

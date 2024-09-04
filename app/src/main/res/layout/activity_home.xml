@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/offWhite"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+   >
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:background="@color/brown"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_weight="0.07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+           >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:id="@+id/logo"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"/>
+
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Medicine Reminder"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/chartheader"
+
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+
+                        android:layout_weight="0.15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/spNameError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="Alarm type"
+                            android:theme="@style/EditTheme"
+
+                            android:textSize="16sp"
+
+                            >
+
+
+
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:id="@+id/spl"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+
+                                android:background="@drawable/border2"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@drawable/search"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"/>
+                                <Spinner
+                                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/spother"
+
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/LL"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.85"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+
+
+                            android:layout_margin="4dp"
+                            android:padding="8dp"
+
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/down" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/setting"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_settings_24"
+                    android:layout_gravity="top|right"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:adjustViewBounds="true"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mainlayout"
+            android:layout_weight="0.79"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+            <FrameLayout
+
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/adlayoyt"
+            android:background="@color/offWhite"
+            android:layout_weight="0.07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.google.android.gms.ads.AdView
+
+
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="0.07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bnView"
+                android:background="@color/brown"
+                app:menu="@menu/nav_items"
+                app:itemTextColor="@color/black"
+                app:itemIconTint="@drawable/colortake"
+                android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:background="@color/brown"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+
+       &lt;!&ndash; <com.google.android.gms.ads.AdView
+
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>&lt;!&ndash;&ndash;&gt;&ndash;&gt;
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:layout_gravity="top|right"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:adjustViewBounds="true"
+
+             />
+
+    </LinearLayout>-->
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.84"
+        >
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Activities.HomeActivity">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+
+
+
+
+            <FrameLayout
+
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="?attr/actionBarSize"/>
+
+                <com.google.android.gms.ads.AdView
+
+                    android:layout_weight="0.5"
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    ads:adSize="SMART_BANNER"
+                    ads:adUnitId="@string/banner_home_footer"></com.google.android.gms.ads.AdView>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bnView"
+                android:background="@color/brown"
+                app:menu="@menu/nav_items"
+                app:itemTextColor="@color/white"
+                app:itemIconTint="@drawable/colortake"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>-->
+
+
+</LinearLayout>

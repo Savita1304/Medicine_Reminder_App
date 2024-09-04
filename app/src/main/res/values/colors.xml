@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="brown">#2062AF</color>
+    <color name="offWhite">#f5f5f5</color>
+
+    <color name="offWhite2">#D3D3D3</color>
+
+    <color name="gray">#676666</color>
+    <color name="my_spinner_text_color">#676666</color>
+
+    <color name="red">#ff0000</color>
+    <color name="darkGreen">#013220</color>
+
+    <color name="darkred">#8B0000</color>
+
+</resources>

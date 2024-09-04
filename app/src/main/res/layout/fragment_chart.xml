@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+   >
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:text="Last 7 Day's Medicine Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:reverseLayout="true"
+        app:stackFromEnd="true"
+        android:id="@+id/recyclerView"/>
+
+
+    <LinearLayout
+        android:id="@+id/showtxt"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+
+        <ImageView
+
+
+            android:id="@+id/Addimg"
+            android:layout_gravity="center"
+            android:src="@drawable/treatment"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:tint="@color/brown"
+            />
+
+
+        <TextView
+            android:textStyle="normal"
+            android:textColor="@color/gray"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Oop's currently records not available yet to come"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:padding="8dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

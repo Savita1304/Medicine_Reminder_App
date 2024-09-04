@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Medicine Reminder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string-array name="frequencyitem">
+
+        <item> Single time a day </item>
+        <item>2 time a day </item>
+
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="alarmType">
+        <item> Notification </item>
+        <item>Alarm </item>
+    </string-array>
+
+
+    <string name="permission_necessary">permission</string>
+    <string name="storage_permission_is_encessary_to_wrote_event">storage</string>
+
+
+
+    <string name="admob_app_id">ca-app-pub-7473120879916787~1462190015</string>
+    <string name="banner_home_footer">ca-app-pub-7473120879916787/1109453339</string>
+    <string name="interstitial_full_screen">ca-app-pub-7473120879916787/1660117671</string>
+
+
+
+
+
+<!--      <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+  <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+  <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>-->
+
+
+</resources>

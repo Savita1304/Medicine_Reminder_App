@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.RefillFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/offWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="Refill Reminder"
+                android:textColor="@color/brown"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/medico" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/pillsNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/brown">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etpills"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="How many pills you currently have?"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/brown"
+                        android:textSize="16sp"
+                        app:hintTextColor="@color/brown"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/alllrmmm"  />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/notifyNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/brown"
+                    app:hintTextColor="@color/brown">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etnotify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Notify me when only "
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:digits=" 12345678910"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/brown"
+                        android:textSize="16sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/alarm" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/timeNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/brown"
+                    app:hintTextColor="@color/brown">
+
+                    <LinearLayout
+                        android:id="@+id/L11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/addb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="8dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.1" />
+
+
+                                <EditText
+                                    android:id="@+id/etT1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.8"
+                                    android:background="@drawable/border"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:hint="12:00 PM"
+                                    android:padding="5dp"
+                                    android:textColorHint="@color/gray" />
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pin" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etRxNameError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/brown"
+                    app:hintTextColor="@color/brown">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Rx Number "
+                        android:maxLength="3"
+                        android:maxLines="1"
+                        android:paddingLeft="8dp"
+                        android:textColor="@color/brown"
+                        android:textSize="16sp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+        <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@drawable/custom_button"
+        android:padding="8dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+

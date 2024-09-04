@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".Fragments.AHomeFragment"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spNameError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Alarm type"
+        android:theme="@style/EditTheme"
+
+        android:textSize="16sp"
+
+        >
+
+
+
+
+        <LinearLayout
+            android:padding="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/spl"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:background="@drawable/border2"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <Spinner
+                android:theme="@style/ThemeOverlay.AppCompat.Light"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/spother"
+
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ListView
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeList"/>
+
+
+    <LinearLayout
+        android:id="@+id/LWAdd"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent" >
+
+        <ImageView
+
+
+            android:id="@+id/Addimg"
+            android:layout_gravity="center"
+            android:src="@drawable/medicinenew"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:tint="@color/brown"
+             />
+
+        <TextView
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add your Medicine"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+       />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

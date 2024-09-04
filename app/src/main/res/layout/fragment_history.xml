@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <!--    <LinearLayout
+            android:background="@color/brown"
+            android:layout_weight="0.07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+                <LinearLayout
+
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+
+                        android:layout_weight="0.15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/spNameError"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:hint="Alarm type"
+                            android:theme="@style/EditTheme"
+
+                            android:textSize="16sp"
+
+                            >
+
+
+
+
+                            <LinearLayout
+                                android:padding="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:id="@+id/spl"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+
+                                android:background="@drawable/border2"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:src="@android:drawable/ic_menu_search"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"/>
+                                <Spinner
+                                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_gravity="center"
+                                    android:id="@+id/spother"
+
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/LL"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.85"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+
+
+                            android:padding="8dp"
+
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+
+                            android:src="@drawable/upload" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>-->
+
+
+
+        <LinearLayout
+            android:layout_weight="0.07"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:tabTextColor="@color/white"
+                app:tabIndicatorColor="@color/white"
+                app:tabInlineLabel="true"
+
+                android:background="@color/brown">
+            </com.google.android.material.tabs.TabLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_weight="0.93"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+
+
+                android:id="@+id/container">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/viewPager"
+                    />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+<!--
+
+
+
+-->
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
